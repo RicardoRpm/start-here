@@ -7,8 +7,8 @@ mergeable:
           match: ['add', 'Add', 'ADD']
       - do: dependent
         changed:
-          file: ''
-          required: ['']
+          file: 'CONTRIBUTORS.md'
+          required: ['CONTRIBUTORS.md', .github/**.yml]
     pass:
       - do: comment
         payload:
